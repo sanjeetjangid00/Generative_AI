@@ -20,8 +20,3 @@ if chat:
     #st.sidebar.text_area("ChatGpt :robot_face:", value=response.text, height=200, max_chars=None)
 else:
     st.warning("Please type something to generate content.")
-    def centered_content():
-        col1, col2, col3 = st.columns([4, 1, 4])
-        return col1, col2, col3
-    with centered_content()[1]:
-        st.title(":blue[Hi!]")
