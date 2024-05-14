@@ -14,7 +14,7 @@ genai.configure(api_key=api_key)
 model=genai.GenerativeModel("gemini-pro")
 if chat:
     response=model.generate_content(chat)
-    st.write(":blue[Human :adult: :]", chat)
+    st.write(":blue[User :adult: :]", chat)
     st.write(":green[Gemini :robot_face: :]", response.text)
     #st.sidebar.text_area("User :adult:", value=chat, height=100, max_chars=None)
     #st.sidebar.text_area("Gemini :robot_face:", value=response.text, height=200, max_chars=None)
