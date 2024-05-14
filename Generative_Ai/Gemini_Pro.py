@@ -21,7 +21,7 @@ if chat:
 else:
     st.warning("Please type something to generate content.")
     def centered_content():
-        col1, col2, col3 = st.columns([4, 1, 4])
+        col1, col2, col3 = st.columns([1, 3, 1])
         return col1, col2, col3
     with centered_content()[1]:
-        st.write("ChatGpt :robot_face: :blue[Hi!]")
+        st.write("ChatGpt :robot_face: : :blue[Hi!]")
