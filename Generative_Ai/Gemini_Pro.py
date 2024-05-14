@@ -8,7 +8,7 @@ def centered_content():
 # Center-align the title
 with centered_content()[1]:
     #st.title(":blue[G]:red[o]:green[o]:blue[g]:green[l]:red[e] :blue[G]:red[e]:green[m]:blue[i]:green[n]:red[i] :blue[P]:red[r]:green[o]")
-    st.title(":blue[Yo Yo Sher]")
+    st.title(":blue[Level Sabke Niklenge]")
 chat=st.chat_input("Ask Something...",key=2003,disabled=False)
 api_key="AIzaSyC_L3-d181ibSultwSEuGm6P4XwE8HIsEQ"
 genai.configure(api_key=api_key)
