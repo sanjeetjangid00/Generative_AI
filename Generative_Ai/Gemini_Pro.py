@@ -14,7 +14,7 @@ api_key="AIzaSyC_L3-d181ibSultwSEuGm6P4XwE8HIsEQ"
 genai.configure(api_key=api_key)
 model=genai.GenerativeModel("gemini-pro")
 if chat:
-    with st.spinner("Thinking"):
+    with st.spinner("Thinking...."):
         response=model.generate_content(chat)
         st.write("User :adult: :", chat)
         st.write("Gemini :robot_face: :", response.text)
