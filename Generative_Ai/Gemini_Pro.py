@@ -24,4 +24,4 @@ else:
         col1, col2, col3 = st.columns([4, 1, 4])
         return col1, col2, col3
     with centered_content()[1]:
-        st.title(":blue[Hi!]")
+        st.write("ChatGpt :robot_face: :blue[Hi!]")
