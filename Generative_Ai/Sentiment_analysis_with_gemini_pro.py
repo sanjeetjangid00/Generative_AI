@@ -13,7 +13,7 @@ genai.configure(api_key=api_key)
 model=genai.GenerativeModel("gemini-pro")
 
 if st.button("Response"):
-    with st.spinner():
+    with st.spinner("Thinking..."):
         response=model.generate_content(chat+"tell me this is only positive or negative")
         st.write("User :adult: :", chat)
         st.write("Gemini :robot_face: :", response.text)
