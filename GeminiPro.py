@@ -16,7 +16,7 @@ if chat:
     response=model.generate_content(chat)
     st.write(":blue[Human :adult: :]", chat)
     st.write(":green[Gemini :robot_face: :]", response.text)
-    #st.sidebar.text_area("Human :adult:", value=chat, height=100, max_chars=None)
-    #st.sidebar.text_area("ChatGpt :robot_face:", value=response.text, height=200, max_chars=None)
+    #st.sidebar.text_area("User :adult:", value=chat, height=100, max_chars=None)
+    #st.sidebar.text_area("Gemini :robot_face:", value=response.text, height=200, max_chars=None)
 else:
     st.warning("Please type something to generate content.")
