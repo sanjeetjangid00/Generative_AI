@@ -14,12 +14,12 @@ api_key="AIzaSyC_L3-d181ibSultwSEuGm6P4XwE8HIsEQ"
 genai.configure(api_key=api_key)
 model=genai.GenerativeModel("gemini-pro")
 if chat:
-    response=model.generate_content(chat)
-    st.write("User :adult: :", chat)
     with st.spinner("Thinking"):
+        response=model.generate_content(chat)
+        st.write("User :adult: :", chat)
         st.write("Gemini :robot_face: :", response.text)
-    #st.sidebar.text_area("Human :adult:", value=chat, height=100, max_chars=None)
-    #st.sidebar.text_area("ChatGpt :robot_face:", value=response.text, height=200, max_chars=None)
+        #st.sidebar.text_area("Human :adult:", value=chat, height=100, max_chars=None)
+        #st.sidebar.text_area("ChatGpt :robot_face:", value=response.text, height=200, max_chars=None)
 else:
     st.warning("Please type something to generate content.")
     st.write("Gemini :robot_face: : :blue[Hi ! How can I assist you today?]")
