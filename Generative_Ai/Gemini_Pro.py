@@ -1,4 +1,4 @@
-import google.generativeai as genai
+niimport google.generativeai as genai
 import streamlit as st
 
 def centered_content():
@@ -20,4 +20,4 @@ if chat:
     #st.sidebar.text_area("ChatGpt :robot_face:", value=response.text, height=200, max_chars=None)
 else:
     st.warning("Please type something to generate content.")
-    st.write("ChatGpt :robot_face: : :blue[Hi!]")
+    st.write("Gemini :robot_face: : :blue[Hi! How can I assist you today?]")
