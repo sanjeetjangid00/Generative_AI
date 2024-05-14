@@ -1,4 +1,4 @@
-niimport google.generativeai as genai
+import google.generativeai as genai
 import streamlit as st
 
 def centered_content():
