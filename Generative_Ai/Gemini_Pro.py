@@ -22,4 +22,4 @@ if chat:
         #st.sidebar.text_area("ChatGpt :robot_face:", value=response.text, height=200, max_chars=None)
 else:
     st.warning("Please type something to generate content.")
-    st.write("Gemini :robot_face: : :blue[Hi ! How can I assist you today?]")
+    st.write(":blue[Gemini] :robot_face: : :green[Hi ! How can I assist you today?]")
