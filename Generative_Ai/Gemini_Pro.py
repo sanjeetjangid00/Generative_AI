@@ -16,8 +16,8 @@ model=genai.GenerativeModel("gemini-pro")
 if chat:
     with st.spinner("Thinking...."):
         response=model.generate_content(chat)
-        st.write(": blue[User] :adult: :", chat)
-        st.write(": green[Gemini] :robot_face: :", response.text)
+        st.write(":blue[User] :adult: :", chat)
+        st.write(":green[Gemini] :robot_face: :", response.text)
         #st.sidebar.text_area("Human :adult:", value=chat, height=100, max_chars=None)
         #st.sidebar.text_area("ChatGpt :robot_face:", value=response.text, height=200, max_chars=None)
 else:
