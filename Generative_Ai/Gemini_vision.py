@@ -3,7 +3,7 @@ import streamlit as st
 from PIL import Image
 
 def centered_content():
-    col1, col2, col3 = st.columns([1, 3, 1])
+    col1, col2, col3 = st.columns([1, 12, 1])
     return col1, col2, col3
 
 # Center-align the title
