@@ -15,14 +15,14 @@ This project demonstrates a Masked Language Model (MLM) using BERT (Bidirectiona
 + Results: The app will display the top predictions along with their respective scores.
 
 #### Example
-Input: The capital of France is [MASK].
-Output:
++ Input: The capital of France is [MASK].
++ Output:
 The capital of France is Paris. (Score: 0.95)
 The capital of France is Lyon. (Score: 0.02)
 
 #### Dependencies
-transformers
-streamlit
++ transformers
++ streamlit
 
 #### Acknowledgments
 + Transformers Library: Hugging Face for the pre-trained BERT model.
