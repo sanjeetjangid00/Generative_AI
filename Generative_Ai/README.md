@@ -15,15 +15,15 @@ This project demonstrates a chatbot application using Google's Generative AI (Ge
 + Results: The app will display the user's question and the AI's response.
 
 #### Example:
-Input: What is the weather like today?
-Output:
++ Input: What is the weather like today?
++ Output:
 User: What is the weather like today?
 Gemini: The weather today is sunny with a high of 75°F.
 
 #### Dependencies:
-google-generativeai
-streamlit
-Configuration
++ google-generativeai
++ streamlit
++ Configuration
 Ensure you have a valid API key for Google Generative AI. Replace the placeholder YOUR_GOOGLE_API_KEY in the code with your actual API key.
 
 #### Acknowledgments
@@ -51,16 +51,16 @@ This project demonstrates a chatbot application using Google's Generative AI (Ge
 + Results: The app will display the uploaded image and the AI's response to your query.
 
 #### Example
-Input: Upload an image of a sunset and ask, What can you tell me about this image?
-Output:
++ Input: Upload an image of a sunset and ask, What can you tell me about this image?
++ Output:
 Image: Displayed in the app.
 Gemini Vision: This is a beautiful sunset with vibrant colors and clear skies.
 
 #### Dependencies
-google-generativeai
-streamlit
-Pillow
-Configuration
++ google-generativeai
++ streamlit
++ Pillow
++ Configuration
 Ensure you have a valid API key for Google Generative AI. Replace the placeholder YOUR_GOOGLE_API_KEY in the code with your actual API key.
 
 #### Acknowledgments
@@ -87,15 +87,15 @@ This project demonstrates a Sentiment Analysis application using Google's Genera
 + Results: The app will display the user's input and the AI's sentiment analysis response.
 
 #### Example
-Input: I love this new phone!
-Output:
++ Input: I love this new phone!
++ Output:
 User: I love this new phone!
 Gemini: The sentiment is positive.
 
 #### Dependencies
-google-generativeai
-streamlit
-Configuration
++ google-generativeai
++ streamlit
++ Configuration
 Ensure you have a valid API key for Google Generative AI. Replace the placeholder YOUR_GOOGLE_API_KEY in the code with your actual API key.
 
 #### Acknowledgments
