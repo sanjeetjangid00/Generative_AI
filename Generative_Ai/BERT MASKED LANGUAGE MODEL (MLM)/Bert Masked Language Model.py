@@ -9,19 +9,20 @@ def centered_title():
 
 with centered_title()[1]:
   st.title(":green[Bert Mask Language Model]")
-st.write(":red[Note: Please write your sentence with [MASK]]")
+st.write(":red[Note: Please write your sentence with [MASK] and Punctuation]")
 st.write("For Example: How are [MASK]?")
 
 text=st.text_input(label="Write your sentence with [MASK]")
 if st.button(":green[Submit]"):
-    if text.strip():
-      results=unmasker(text)  
-      for result in results:
-        sequence=result['sequence']
-        score=result['score']
-        st.write(":red[Output-> ]", sequence)
-        st.write(":blue[Score-> ]", score)
+    if "[MASK]" in text:
+      if text.strip():
+        results=unmasker(text)  
+        for result in results:
+          sequence=result['sequence']
+          score=result['score']
+          st.write(":red[Output-> ]", sequence)
+          st.write(":blue[Score-> ]", score)
     else: 
-      st.warning(":red[Please Write Your Sentence With [MASK]]")
+      st.warning(":red[Please Write Your Sentence With [MASK] and Punctuation]")
 else:
-  st.warning("Please Write Your Sentence With [MASK]")
+  st.warning("Please Write Your Sentence With [MASK] and Punctuation")
