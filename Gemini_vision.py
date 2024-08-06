@@ -10,7 +10,7 @@ def centered_content():
 with centered_content()[1]:
     st.title(":blue[G]:red[o]:green[o]:blue[g]:green[l]:red[e] :blue[G]:red[e]:green[m]:blue[i]:green[n]:red[i] :blue[V]:red[i]:green[s]:blue[i]:green[o]:red[n]")
 
-api_key = "AIzaSyC_L3-d181ibSultwSEuGm6P4XwE8HIsEQ"
+api_key = "AIzaSyB9i0slQTLC_5DZ29mbj1esnmtqdm1NfJg"
 genai.configure(api_key=api_key)
 
 uploaded_img = st.file_uploader("Upload an Image", type=["jpg", "png", "jpeg"])
