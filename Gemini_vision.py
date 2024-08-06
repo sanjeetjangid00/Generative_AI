@@ -11,7 +11,7 @@ with centered_content()[1]:
     st.title(":blue[G]:red[o]:green[o]:blue[g]:green[l]:red[e] :blue[G]:red[e]:green[m]:blue[i]:green[n]:red[i] :blue[V]:red[i]:green[s]:blue[i]:green[o]:red[n]")
 
 api_key = "AIzaSyDa7ZaRJJKcgHY0fPENj3eumUnl76Bpdis"
-genai.configure(api_key=api_key)
+genai.configure(api_key="AIzaSyDa7ZaRJJKcgHY0fPENj3eumUnl76Bpdis")
 
 uploaded_img = st.file_uploader("Upload an Image", type=["jpg", "png", "jpeg"])
 
