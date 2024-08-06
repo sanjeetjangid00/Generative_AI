@@ -33,15 +33,15 @@ Ensure you have a valid API key for Google Generative AI. Replace the placeholde
 -----------------------------
 ## Google Gemini Vision Chatbot
 -----------------------------
-### App Link - https://my-gemini-pro-vision.streamlit.app/
+### App Link - https://gemini--flash.streamlit.app/
 --------
 
-This project demonstrates a chatbot application using Google's Generative AI (Gemini Vision). It allows users to upload an image and ask questions related to the image, receiving AI-generated responses.
+This project demonstrates a chatbot application using Google's Generative AI (Gemini Flash). It allows users to upload an image and ask questions related to the image, receiving AI-generated responses.
 
 #### Features
 + Interactive Interface: Utilizes Streamlit for a user-friendly web interface.
 + Image Upload: Supports uploading of images in JPG, PNG, and JPEG formats.
-+ Real-time Responses: Generates responses to user queries about the uploaded image using the Google Gemini Vision model.
++ Real-time Responses: Generates responses to user queries about the uploaded image using the Google Gemini Flash model.
 + Center-aligned Title: A visually appealing title showcasing Google's branding colors.
 
 #### Usage
@@ -54,7 +54,7 @@ This project demonstrates a chatbot application using Google's Generative AI (Ge
 + Input: Upload an image of a sunset and ask, What can you tell me about this image?
 + Output:
 Image: Displayed in the app.
-Gemini Vision: This is a beautiful sunset with vibrant colors and clear skies.
+Gemini Flash: This is a beautiful sunset with vibrant colors and clear skies.
 
 #### Dependencies
 + google-generativeai
@@ -64,14 +64,14 @@ Gemini Vision: This is a beautiful sunset with vibrant colors and clear skies.
 Ensure you have a valid API key for Google Generative AI. Replace the placeholder YOUR_GOOGLE_API_KEY in the code with your actual API key.
 
 #### Acknowledgments
-+ Google Generative AI: For providing the Gemini Vision model.
++ Google Generative AI: For providing the Gemini Flash model.
 + Streamlit: For the easy-to-use web application framework.
 + Pillow: For image processing capabilities.
 
 ------------
 ## Sentiment Analysis with Google Gemini Pro
 ------------
-### App Link - https://sentiment-analysis-with-gemini.streamlit.app/
+### App Link - https://sentiment-analysis-with-geminipro.streamlit.app/
 ----------
 
 This project demonstrates a Sentiment Analysis application using Google's Generative AI (Gemini Pro). Users can input text to receive AI-generated responses indicating whether the sentiment is positive or negative.
