@@ -20,7 +20,7 @@ if uploaded_img is not None:
     prompt = st.text_input("Ask Something...")
     if st.button("Get Response"):
         img = Image.open(uploaded_img)
-        model = genai.GenerativeModel("gemini-1.0-pro-vision-latest")
+        model = genai.GenerativeModel("gemini-1.5-flash")
         with st.spinner("Thinking..."):
           response=model.generate_content([prompt,img])
           st.write(":green[Gemini Vision]:robot_face: :",response.text)
