@@ -8,7 +8,7 @@ def centered_content():
 
 # Center-align the title
 with centered_content()[1]:
-    st.title(":blue[G]:red[o]:green[o]:blue[g]:green[l]:red[e] :blue[G]:red[e]:green[m]:blue[i]:green[n]:red[i] :blue[V]:red[i]:green[s]:blue[i]:green[o]:red[n]")
+    st.title(":blue[G]:red[o]:green[o]:blue[g]:green[l]:red[e] :blue[G]:red[e]:green[m]:blue[i]:green[n]:red[i] :blue[F]:red[l]:green[a]:blue[s]:green[d]")
 
 api_key = "AIzaSyDa7ZaRJJKcgHY0fPENj3eumUnl76Bpdis"
 genai.configure(api_key="AIzaSyDa7ZaRJJKcgHY0fPENj3eumUnl76Bpdis")
