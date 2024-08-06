@@ -8,7 +8,7 @@ def centered_content():
 with centered_content()[1]:
     st.title(":green[Sentiment Analysis]")
 chat=st.text_input("Ask Something...")
-api_key="AIzaSyC_L3-d181ibSultwSEuGm6P4XwE8HIsEQ"
+api_key="AIzaSyDa7ZaRJJKcgHY0fPENj3eumUnl76Bpdis"
 genai.configure(api_key=api_key)
 model=genai.GenerativeModel("gemini-pro")
 
