@@ -31,4 +31,3 @@ if chat:
 else:
     st.warning("Please type something to generate content.")
     st.write(":blue[Gemini] :robot_face: : :green[Hi ! How can I assist you today?]")
-    st.write_stream()
