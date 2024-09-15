@@ -16,7 +16,7 @@ model=genai.GenerativeModel("gemini-pro")
 
 def chatting(chat):
     return model.generate_content(chat)
-def stream(response):
+def stream_data(response):
             st.write(":green[Gemini] :robot_face: :")
             for word in response.text.split(" "):
                 yield word + " "
@@ -26,7 +26,7 @@ if chat:
     with st.spinner("Generating...."):
         #st.write(":green[Gemini] :robot_face: :")
         response = chatting(chat)
-        st.write_stream(stream(response))
+        st.write_stream(stream_data(response))
 
 else:
     st.warning("Please type something to generate content.")
