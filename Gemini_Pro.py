@@ -2,12 +2,12 @@ import google.generativeai as genai
 import streamlit as st
 import time
 def centered_content():
-    col1, col2, col3 = st.columns([1, 3, 1])
+    col1, col2, col3 = st.columns([1, 4, 1])
     return col1, col2, col3
 
 # Center-align the title
 with centered_content()[1]:
-    st.title(":blue[G]:red[e]:green[m]:blue[i]:green[n]:red[i] :blue[P]:red[o]:green[w]:blue[e]:green[r]:red[e]:blue[d] :blue[A]:red[I] :blue[C]:red[h]:green[a]:blue[t]:green[b]:red[o] :blue[t]")
+    st.title(":blue[G]:red[e]:green[m]:blue[i]:green[n]:red[i] :blue[P]:red[o]:green[w]:blue[e]:green[r]:red[e]:blue[d] :blue[A]:red[I] :blue[C]:red[h]:green[a]:blue[t]:green[b]:red[o]:blue[t]")
     
 chat=st.chat_input("Ask Something...",key=2003,disabled=False)
 api_key="AIzaSyB9i0slQTLC_5DZ29mbj1esnmtqdm1NfJg"
