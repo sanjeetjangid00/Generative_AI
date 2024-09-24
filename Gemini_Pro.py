@@ -2,7 +2,7 @@ import google.generativeai as genai
 import streamlit as st
 import time
 def centered_content():
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 4, 2])
     return col1, col2, col3
 
 # Center-align the title
