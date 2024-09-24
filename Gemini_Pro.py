@@ -7,7 +7,7 @@ def centered_content():
 
 # Center-align the title
 with centered_content()[1]:
-    st.title(":blue[G]:red[o]:green[o]:blue[g]:green[l]:red[e] :blue[G]:red[e]:green[m]:blue[i]:green[n]:red[i] :blue[P]:red[r]:green[o]")
+    st.title(":blue[G]:red[e]:green[m]:blue[i]:green[n]:red[i] :blue[P]:red[o]:green[w]:blue[e]:green[r]:red[e] :blue[d]:red[C]:green[h]:blue[a]:green[t]:red[b]:blue[o]:green[t]")
     
 chat=st.chat_input("Ask Something...",key=2003,disabled=False)
 api_key="AIzaSyB9i0slQTLC_5DZ29mbj1esnmtqdm1NfJg"
