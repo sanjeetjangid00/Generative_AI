@@ -1,6 +1,6 @@
 import google.generativeai as genai
 import streamlit as st
-
+os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
 def centered_content():
     col1, col2, col3 = st.columns([1, 3, 1])
     return col1, col2, col3
@@ -8,8 +8,8 @@ def centered_content():
 with centered_content()[1]:
     st.title(":green[Sentiment Analysis]")
 chat=st.text_input("Ask Something...")
-api_key="AIzaSyDa7ZaRJJKcgHY0fPENj3eumUnl76Bpdis"
-genai.configure(api_key=api_key)
+
+genai.configure(api_key=GOOGLE_API_KEY)
 model=genai.GenerativeModel("gemini-pro")
 
 if st.button("Response"):
