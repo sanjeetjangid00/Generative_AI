@@ -3,6 +3,7 @@ import streamlit as st
 import os
 from dotenv import load_dotenv
 
+load_dotenv()
 os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
 def centered_content():
     col1, col2, col3 = st.columns([1, 3, 1])
@@ -12,7 +13,7 @@ with centered_content()[1]:
     st.title(":green[Sentiment Analysis]")
 chat=st.text_input("Ask Something...")
 
-load_dotenv()
+
 
 genai.configure(api_key=GOOGLE_API_KEY)
 model=genai.GenerativeModel("gemini-pro")
