@@ -3,23 +3,41 @@ import streamlit as st
 import os
 from dotenv import load_dotenv
 
+# Load environment variables
 load_dotenv()
-os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
+
+# Set API key for Google Generative AI
+api_key = os.getenv("GOOGLE_API_KEY")
+os.environ["GOOGLE_API_KEY"] = api_key
+
+# Function for centering content in Streamlit layout
 def centered_content():
     col1, col2, col3 = st.columns([1, 3, 1])
     return col1, col2, col3
 
+# Set up Streamlit layout
 with centered_content()[1]:
     st.title(":green[Sentiment Analysis]")
-chat=st.text_input("Ask Something...")
 
+# User input
+chat = st.text_input("Ask Something...")
 
+# Initialize Google Generative AI
+genai.configure(api_key=api_key)
 
-genai.configure(api_key=GOOGLE_API_KEY)
-model=genai.GenerativeModel("gemini-pro")
+# Choose model (ensure "gemini-pro" is valid)
+model = genai.GenerativeModel("gemini-pro")
 
-if st.button("Response"):
-    with st.spinner("Thinking..."):
-        response=model.generate_content(chat+"tell me this is only positive or negative")
-        st.write("User :adult: :", chat)
-        st.write("Gemini :robot_face: :", response.text)
+# When the button is clicked
+if st.button("Analyze Sentiment"):
+    if chat:  # Check if the user has entered a query
+        with st.spinner("Analyzing..."):
+            # Request sentiment analysis from the model
+            prompt = f"{chat} Tell me if this is only positive or negative."
+            response = model.generate_content(prompt)
+            
+            # Display the results
+            st.write(f"**User**: {chat}")
+            st.write(f"**Gemini (Sentiment)**: {response.text}")
+    else:
+        st.warning("Please enter something to analyze.")
