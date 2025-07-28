@@ -1,6 +1,10 @@
 import google.generativeai as genai
 import streamlit as st
 from PIL import Image
+from dotenv import load_dotenv
+
+load_dotenv()
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 
 def centered_content():
     col1, col2, col3 = st.columns([1, 12, 1])
@@ -10,8 +14,8 @@ def centered_content():
 with centered_content()[1]:
     st.title(":blue[G]:red[o]:green[o]:blue[g]:green[l]:red[e] :blue[G]:red[e]:green[m]:blue[i]:green[n]:red[i] :blue[F]:red[l]:green[a]:blue[s]:green[h]")
 
-api_key = "AIzaSyDa7ZaRJJKcgHY0fPENj3eumUnl76Bpdis"
-genai.configure(api_key="AIzaSyDa7ZaRJJKcgHY0fPENj3eumUnl76Bpdis")
+
+genai.configure(api_key=GOOGLE_API_KEY)
 
 uploaded_img = st.file_uploader("Upload an Image", type=["jpg", "png", "jpeg"])
 
