@@ -26,7 +26,7 @@ chat = st.text_input("Ask Something...")
 genai.configure(api_key=api_key)
 
 # Choose model (ensure "gemini-pro" is valid)
-model = genai.GenerativeModel("gemini-pro")
+model = genai.GenerativeModel("gemini-1.5-flash")
 
 # When the button is clicked
 if st.button("Analyze Sentiment"):
