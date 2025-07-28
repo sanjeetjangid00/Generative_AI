@@ -1,6 +1,9 @@
 import google.generativeai as genai
 import streamlit as st
 import time
+from dotenv import load_dotenv
+load_dotenv()
+
 def centered_content():
     col1, col2, col3 = st.columns([1, 12, 1])
     return col1, col2, col3
@@ -10,8 +13,8 @@ with centered_content()[1]:
     st.title(":blue[G]:red[e]:green[m]:blue[i]:green[n]:red[i] :blue[P]:red[o]:green[w]:blue[e]:green[r]:red[e]:blue[d] :blue[A]:red[I] :blue[C]:red[h]:green[a]:blue[t]:green[b]:red[o]:blue[t]")
     
 chat=st.chat_input("Ask Something...",key=2003,disabled=False)
-api_key="AIzaSyB9i0slQTLC_5DZ29mbj1esnmtqdm1NfJg"
-genai.configure(api_key=api_key)
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+genai.configure(api_key=GOOGLE_API_KEY)
 model=genai.GenerativeModel("gemini-pro")
 
 def chatting(chat):
